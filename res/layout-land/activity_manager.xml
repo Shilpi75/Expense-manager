@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+
+        <FrameLayout
+            android:id="@+id/fragmentholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/back5"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                card_view:cardCornerRadius="4dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <com.example.expensemanager.CustomTextView1
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#ac3973"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageButton
+                                android:id="@+id/imageButton1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:background="#ffffff"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/income_f" />
+
+                            <com.example.expensemanager.CustomTextView1
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textColor="#006600"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:background="#ffffff"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/expense_f" />
+
+                            <com.example.expensemanager.CustomTextView1
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textColor="#cc0000"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                        
+                <ImageButton
+                    android:id="@+id/add"
+                    android:layout_width="0dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="0.25"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custombutton"
+                    android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <com.example.expensemanager.CustomTextView1
+                        android:id="@+id/textbalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.20"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/textborder"
+                        android:gravity="center"
+                        android:padding="10dp"
+                         />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/navlist"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#80ffe6f7"
+            android:paddingBottom="20dp" 
+            >
+        </ListView>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

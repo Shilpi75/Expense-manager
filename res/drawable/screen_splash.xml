@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list     
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/flaganim"
+    android:oneshot="true"
+    >
+    <item android:drawable="@drawable/screen3" android:duration="2000" />
+    <item android:drawable="@drawable/screen4" android:duration="2000" />
+</animation-list> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Deafult Theme -->
+    <color name="myPrimaryColor">#3D003D</color>
+    <color name="myPrimaryDarkColor">#5C005C</color>
+    <color name="myAccentColor">#3D003D</color>
+    <color name="myWindowBackground">#ffffff</color>
+    <color name="myTextPrimaryColor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#2929A3</color>
+    <color name="red">#cc0000</color>
+    <color name="green">#006600</color>
+
+</resources>

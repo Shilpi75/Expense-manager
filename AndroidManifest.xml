@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expensemanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Manager"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScreenSplash"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddExpense"
+            android:label="@string/title_activity_add_expense" >
+        </activity>
+        <activity
+            android:name=".ShowExpense"
+            android:label="@string/title_activity_show_expense" >
+        </activity>
+        <activity
+            android:name=".AddIncome"
+            android:label="@string/title_activity_add_income" >
+        </activity>
+        <activity
+            android:name=".ShowIncome"
+            android:label="@string/title_activity_show_income" >
+        </activity>
+        <activity
+            android:name=".Income_CustomAdapter"
+            android:label="@string/title_activity_income__custom_adapter" >
+        </activity>
+        <activity
+            android:name=".Chart"
+            android:label="@string/title_activity_chart" >
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_manager" >
+        </activity>
+        <activity
+            android:name=".ViewExpense"
+            android:label="@string/title_activity_view_expense" >
+        </activity>
+        <activity
+            android:name=".ViewIncome"
+            android:label="@string/title_activity_view_income" >
+        </activity>
+        <activity
+            android:name=".ChooseAdd"
+            android:label="@string/title_activity_choose_add" >
+        </activity>
+        <activity
+            android:name=".EditIncome"
+            android:label="@string/title_activity_edit_income" >
+        </activity>
+        <activity
+            android:name=".EditExpense"
+            android:label="@string/title_activity_edit_expense" >
+        </activity>
+    </application>
+
+</manifest>

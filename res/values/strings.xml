@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExpenseManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_expense">AddExpense</string>
+    <string name="title_activity_show_expense">ShowExpense</string>
+    <string name="title_activity_add_income">AddIncome</string>
+    <string name="title_activity_show_income">ShowIncome</string>
+    <string name="title_activity_income__custom_adapter">Income_CustomAdapter</string>
+    <string name="title_activity_chart">Chart</string>
+    <string name="title_activity_screen_splash">ScreenSplash</string>
+    <string name="title_activity_manager">Manager</string>
+    <string name="title_activity_view_expense">ViewExpense</string>
+    <string name="title_activity_view_income">ViewIncome</string>
+    <string name="title_activity_choose_add">ChooseAdd</string>
+    <string name="open"> Open Drawer</string>
+    <string name="close">close drawer</string>
+    <string name="title_activity_edit_income">EditIncome</string>
+    <string name="title_activity_edit_expense">EditExpense</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <com.example.expensemanager.CustomTextView1
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#4d0026"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="horizontal|vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffe5e5"
+                    android:padding="10dp"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="1" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="Amount: "
+                            android:textSize="20dp" />
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:id="@+id/amountText"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="Category: "
+                            android:textSize="20dp" />
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:id="@+id/categoryText"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="Description: "
+                            android:textSize="20dp" />
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:id="@+id/descriptionText"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="Date: "
+                            android:textSize="20dp" />
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:id="@+id/dateText"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="Mode: "
+                            android:textSize="20dp" />
+
+                        <com.example.expensemanager.CustomTextView1
+                            android:id="@+id/modeText"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:singleLine="false"
+                            android:textSize="20dp" />
+                    </TableRow>
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

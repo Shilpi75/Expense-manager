@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/addbuttonlight">
+        <shape android:shape="oval">
+            <size android:width="100dp"
+                android:height="100dp"/>
+            <solid android:color="#cc0000">
+                
+            </solid>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:drawable="@drawable/addbutton">
+        <shape android:shape="oval">
+            <size android:width="100dp"
+                android:height="100dp"/>
+            <solid android:color="#cc0000">
+                
+            </solid>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval" android:drawable="@drawable/addbutton">
+            <size android:width="100dp"
+                android:height="100dp"/>
+            <solid android:color="#cc0000">
+                
+            </solid>
+        </shape>
+    </item>
+
+</selector>

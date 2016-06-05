@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.expensemanager.ViewIncome" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_edit"
+        android:title="edit"/>
+    <item
+        android:id="@+id/delete"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="100"
+        android:title="delete"/>
+
+</menu>

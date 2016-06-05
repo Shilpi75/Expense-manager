@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.expensemanager.CustomTextView1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/selector"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textColor="#990099"
+    android:textSize="25dp" >
+
+</com.example.expensemanager.CustomTextView1>
