@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.expensemanager.MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/bt_add_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Income" />
+    <Button
+        android:id="@+id/bt_add_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense" />
+    <Button
+        android:id="@+id/bt_show_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show income" />
+    <Button
+        android:id="@+id/bt_show_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Expense" />
+    <Button
+        android:id="@+id/bt_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager" />
+
+</LinearLayout>
+
