@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(view.getId())
         {
             case R.id.bt_add_expense:
+                startActivity(new Intent(this, AddExpenseActivity.class));
                 break;
             case R.id.bt_add_income :
                 startActivity(new Intent(this, AddIncomeActivity.class));

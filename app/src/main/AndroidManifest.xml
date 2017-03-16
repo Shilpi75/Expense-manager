@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddIncomeActivity" android:label="Add Income"></activity>
+        <activity
+            android:name=".AddIncomeActivity"
+            android:label="Add Income" />
+        <activity android:name=".AddExpenseActivity" />
+        <activity android:name=".ShowIncomeActivity"></activity>
     </application>
 
 </manifest>
