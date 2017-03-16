@@ -21,7 +21,8 @@
             android:label="Add Income" />
         <activity android:name=".AddExpenseActivity" />
         <activity android:name=".ShowIncomeActivity" />
-        <activity android:name=".ViewItem"></activity>
+        <activity android:name=".ViewItem" />
+        <activity android:name=".ManagerActivity"></activity>
     </application>
 
 </manifest>

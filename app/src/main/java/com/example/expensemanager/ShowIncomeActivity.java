@@ -117,7 +117,7 @@ public class ShowIncomeActivity extends AppCompatActivity {
 
             IncomeModel obj = list.get(position);
             holder.mCategory.setText(obj.getSource()+"");
-            holder.mImage.setImageResource(R.drawable.income);
+            holder.mImage.setImageResource(R.drawable.income_bag);
             double amount=obj.getAmount();
             DecimalFormat df = new DecimalFormat("####0.00");
             holder.mAmount.setText("Rs. " + df.format(amount));
@@ -126,11 +126,11 @@ public class ShowIncomeActivity extends AppCompatActivity {
             holder.setClickListener(new ItemClickListener() {
                 @Override
                 public void onClick(View view, int position, boolean isLongClick) {
-                    if(isLongClick)
+                    if(!isLongClick)
                     {
                         IncomeModel obj = list.get(position);
                         String id = obj.getId();
-                       Intent intent = new Intent(this, ViewItem.class);
+                       Intent intent = new Intent(ShowIncomeActivity.this, ViewItem.class);
                         intent.putExtra("isIncome",true);
                         intent.putExtra("id", id);
                         startActivity(intent);
