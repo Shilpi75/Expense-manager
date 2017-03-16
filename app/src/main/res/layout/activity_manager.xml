@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.expensemanager.ManagerActivity"
     android:orientation="vertical">
 
@@ -119,7 +120,40 @@
 
 
     </android.support.v7.widget.CardView>
+    
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_fab_size="normal"
+        android:layout_gravity="bottom|right"
+        app:menu_icon="@drawable/fab_add"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true"
+        >
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/material_design_floating_action_menu_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_add"
+        fab:fab_label="Add Income"
+        app:fab_colorNormal="#4CAF50"
+        app:fab_colorPressed="#A5D6A7"
+        fab:fab_size="mini" />
 
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/material_design_floating_action_menu_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_add"
+
+        fab:fab_label="Add Expense"
+        fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
 
 
 
