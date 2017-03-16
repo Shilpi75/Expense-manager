@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.expensemanager.ShowIncomeActivity">
+    tools:context="com.example.expensemanager.ShowIncomeActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+       >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        ></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right|bottom|end"
+        android:textSize="20sp"
+        tools:text = "Total Expense: 1000"
+        android:padding="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+
+</LinearLayout>

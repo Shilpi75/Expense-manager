@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_show_expense :
                 break;
             case R.id.bt_show_income :
+                startActivity(new Intent(this, ShowIncomeActivity.class));
                 break;
             case R.id.bt_manager:
                 break;

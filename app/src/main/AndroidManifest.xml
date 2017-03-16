@@ -20,7 +20,8 @@
             android:name=".AddIncomeActivity"
             android:label="Add Income" />
         <activity android:name=".AddExpenseActivity" />
-        <activity android:name=".ShowIncomeActivity"></activity>
+        <activity android:name=".ShowIncomeActivity" />
+        <activity android:name=".ViewItem"></activity>
     </application>
 
 </manifest>
