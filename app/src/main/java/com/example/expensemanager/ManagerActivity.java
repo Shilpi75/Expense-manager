@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionButton;
@@ -16,12 +17,13 @@ import org.w3c.dom.Text;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 
-public class ManagerActivity extends AppCompatActivity {
+public class ManagerActivity extends AppCompatActivity implements View.OnClickListener {
 
     Toolbar toolbar;
     TextView mIncomeDetails, mExpenseDetails, mBalance, mMonth;
     FloatingActionMenu fabMenu;
     FloatingActionButton fabIncome, fabExpense;
+    ImageView mImageIncome, mImageExpense;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ public class ManagerActivity extends AppCompatActivity {
         fabMenu = (FloatingActionMenu)findViewById(R.id.fab_menu);
         fabIncome = (FloatingActionButton)findViewById(R.id.fab_item_income);
         fabExpense = (FloatingActionButton)findViewById(R.id.fab_item_expense);
+        mImageExpense = (ImageView)findViewById(R.id.image_expense);
+        mImageIncome = (ImageView)findViewById(R.id.image_income);
         setSupportActionBar(toolbar);
 
         String[] monthNames = { "January", "February", "March", "April", "May",
@@ -79,6 +83,23 @@ public class ManagerActivity extends AppCompatActivity {
             }
         });
 
+        mImageIncome.setOnClickListener(this);
+        mImageExpense.setOnClickListener(this);
+        mIncomeDetails.setOnClickListener(this);
+        mExpenseDetails.setOnClickListener(this);
+    }
 
+    @Override
+    public void onClick(View view) {
+        switch(view.getId())
+        {
+            case R.id.image_income:
+            case R.id.tv_income_details:
+                startActivity(new Intent(ManagerActivity.this, ShowIncomeActivity.class));
+                break;
+            case R.id.image_expense:
+            case R.id.tv_expense_details:
+                break;
+        }
     }
 }

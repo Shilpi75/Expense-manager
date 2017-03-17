@@ -77,7 +77,8 @@
                     android:textColor="#006600"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    tools:text="Income"/>
+                    tools:text="Income"
+                    android:clickable="true"/>
             </LinearLayout>
 
             <LinearLayout
@@ -104,7 +105,8 @@
                     android:textColor="#cc0000"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    tools:text="Expense"/>
+                    tools:text="Expense"
+                    android:clickable="true"/>
             </LinearLayout>
         </LinearLayout>
 
